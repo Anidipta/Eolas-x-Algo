@@ -1,0 +1,9 @@
+data_fetcher
+streamlit
+requests
+python-dotenv
+plotly
+pandas
+fastapi
+uvicorn
+datetime
