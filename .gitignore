@@ -1,0 +1,66 @@
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+*.env
+*.env.*
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+.env/
+.virtualenv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignore Streamlit cache and config files
+.streamlit/
+*.tfevents
+logs/
+config.toml
+secrets.toml
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and databases
+*.log
+*.sqlite3
+*.db
+*.sqlite
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore compiled Python files
+*.so
+
+# Ignore IDE settings and project files
+.vscode/
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+
+# Ignore package managers
+node_modules/
+dist/
+build/
+yarn.lock
+package-lock.json
+
+# Ignore temporary and backup files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore Docker and Kubernetes files
+docker-compose.override.yml
+.kube/
