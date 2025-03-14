@@ -1,5 +1,4 @@
-# Eolas-x-Algo
-# Crypto Trading Insights Dashboard
+# Eolas-x-Algo > Crypto Trading Insights Dashboard
 
 ## Overview
 This project is a **real-time crypto trading insights dashboard** built using **Streamlit** and **FastAPI**. It provides automated trading insights, including:
@@ -14,8 +13,7 @@ This project is a **real-time crypto trading insights dashboard** built using **
 ✅ **AI Token Price Tracking** – Monitors AI-related tokens to support informed trading decisions.  
 ✅ **Early Market Trend Detection** – Uses social sentiment analysis and price movement data.  
 ✅ **FastAPI Backend** – Serves live trading insights and signals.  
-✅ **Streamlit Frontend** – Displays charts, analytics, and alerts in a user-friendly UI.  
-✅ **Auto-Trade Alerts (Optional)** – Sends buy/sell alerts via Telegram or Discord.  
+✅ **Streamlit Frontend** – Displays charts, analytics, and alerts in a user-friendly UI.
 
 ---
 
@@ -53,13 +51,13 @@ pip install -r requirements.txt
 ## Running the Application
 ### 1. Start the FastAPI Backend
 ```bash
-uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
+python backend/main.py
 ```
 - Access API Docs at: **`http://127.0.0.1:8000/docs`**
 
 ### 2. Start the Streamlit Frontend
 ```bash
-streamlit run frontend/app.py
+streamlit run app.py
 ```
 - Open in browser: **`http://localhost:8501`**
 
@@ -77,22 +75,26 @@ streamlit run frontend/app.py
 
 ## Project Structure
 ```
-crypto-trading-dashboard/
+Eolas x Algo/
 │-- backend/
-│   ├── main.py  # FastAPI backend
-│   ├── utils.py  # Utility functions
 │   ├── data_fetcher.py  # Fetches crypto data from APIs
-│   ├── trading_logic.py  # Implements grid trading and trend detection
+│   ├── main.py  # FastAPI backend
+│   ├── trading_logic.py  # Implements trading strategies
 │
-│-- frontend/
-│   ├── app.py  # Streamlit dashboard
-│   ├── pages/
-│   │   ├── trading_pairs.py  # Displays trading pairs
-│   │   ├── ai_tokens.py  # AI token tracking
-│   │   ├── trends.py  # Market trends
+│-- pages/
+│   ├── ai_tokens.py  # AI token tracking
+│   ├── api_functions.py  # API-related utilities
+│   ├── dashboard_overview.py  # Overview of the trading dashboard
+│   ├── market_trends.py  # Market trend analysis
+│   ├── trade_signals.py  # Trading signal indicators
+│   ├── trading_pairs.py  # Displays trading pairs
+│   ├── utils.py  # Utility functions
 │
-│-- requirements.txt  # Dependencies
+│-- app.py  # Streamlit dashboard entry point
+│-- requirements.txt  # Project dependencies
 │-- README.md  # Project documentation
+│-- .gitignore  # Git ignore file
+
 ```
 
 ---
