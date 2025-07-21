@@ -1,4 +1,4 @@
-# Eolas-x-Algo > Crypto Trading Insights Dashboard
+# Crypto Trading Insights Dashboard
 
 ## Overview
 This project is a **real-time crypto trading insights dashboard** built using **Streamlit** and **FastAPI**. It provides automated trading insights, including:
